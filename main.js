@@ -1,8 +1,8 @@
 // ===== HOME CAROUSEL =====
 const homeSlides = [
-    { img: 'https://picsum.photos/seed/miks/1200/600', title: 'Miks Henrijs Ozolins', desc: 'Programmer from Latvia · Erasmus+ participant' },
+    { img: 'Pictures/mhozolins.jpeg', title: 'Miks Henrijs Ozolins', desc: 'Programmer from Latvia · Erasmus+ participant' },
     { img: 'https://picsum.photos/seed/group/1200/600', title: 'Our Group', desc: 'International team of students and mentors' },
-    { img: 'https://picsum.photos/seed/school/1200/600', title: 'Vocational Secondary School "Victoria"', desc: 'My school in Latvia – programming & IT' },
+    { img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ83fUwb1r84LKHqJsmpWDGPR5jrsb601MYc8ECvn26C07KQnylccenLgLzGA&s', title: 'Vocational Secondary School "Victoria"', desc: 'My school in Latvia – programming & IT' },
     { img: 'https://picsum.photos/seed/germany/1200/600', title: 'Gut Whelitz, Germany', desc: 'Host organization and internship destination' }
 ];
 
@@ -53,10 +53,10 @@ homeInterval = setInterval(nextHomeSlide, 4000);
 
 // ===== PRACTICE DATA (weeks 1–4) =====
 const weekData = [
-    { week: 1, title: 'Kick-off', slides: [
-        { img: 'https://picsum.photos/seed/p1/800/500', title: 'Welcome', desc: 'First day at Gut Whelitz.' },
-        { img: 'https://picsum.photos/seed/p2/800/500', title: 'Stand-up', desc: 'Daily meeting.' },
-        { img: 'https://picsum.photos/seed/p3/800/500', title: 'Workshop', desc: 'Design session.' }
+    { week: 1, title: 'Start', slides: [
+        { img: 'Pictures/First_day.jpeg', title: 'Welcome', desc: 'First day at Gut Whelitz. We got to know our Mentor and our working space.' },
+        { img: 'Pictures/week1_codeaca.jpeg', title: 'Start', desc: 'At the start we revised our knowlage about web programing and I learned a lot about JavaScript.' },
+        { img: 'Pictures/Website_start.jpeg', title: 'First Task', desc: 'We were given a task to start our website about this trip, and we started it at the end of the first week and keep on updating it with pictures and information about our stay here in Germany.' }
     ]},
     { week: 2, title: 'Agile', slides: [
         { img: 'https://picsum.photos/seed/p4/800/500', title: 'Scrum', desc: 'Task board.' },
