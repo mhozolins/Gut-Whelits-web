@@ -6,17 +6,29 @@
     <title>Erasmus+ · Miks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+    <!-- TOP NAVBAR -->
     <nav class="navbar">
-        <div class="brand"><i class="fas fa-terminal"></i> My stay at Gut-Wehlitz</div>
+        <div class="brand"><i class="fas fa-terminal"></i> Erasmus+</div>
         <ul class="nav-links" id="navLinks">
             <li><a href="#" class="active" data-section="home">Home</a></li>
-            <li><a href="#" data-section="practice">Practice</a></li>
+            <li class="has-dropdown">
+                <a href="#" data-section="practice">
+                    Practice <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="#" data-section="practice" data-filter="all">All Weeks</a></li>
+                    <li><a href="#" data-section="practice" data-filter="week1">Week 1</a></li>
+                    <li><a href="#" data-section="practice" data-filter="week2">Week 2</a></li>
+                    <li><a href="#" data-section="practice" data-filter="week3">Week 3</a></li>
+                    <li><a href="#" data-section="practice" data-filter="week4">Week 4</a></li>
+                </ul>
+            </li>
             <li><a href="#" data-section="culture">Culture</a></li>
             <li><a href="#" data-section="freetime">FreeTime</a></li>
         </ul>
@@ -38,12 +50,42 @@
             <p class="sub">Programmer · Vocational secondary school "Victoria" (Latvia)</p>
             <p class="sub">→ Erasmus+ internship at <strong>Gut Whelitz, Germany</strong></p>
             <div class="badge"><i class="fas fa-calendar-alt"></i> June – July 2026</div>
+        </div>
 
-            <div class="info-grid">
-                <div class="card"><i class="fas fa-school"></i><h3>My School</h3><p>Vocational secondary school "Victoria" – programming &amp; IT.</p></div>
-                <div class="card"><i class="fas fa-building"></i><h3>Host</h3><p>Gut Whelitz, Germany – internship workplace.</p></div>
-                <div class="card"><i class="fas fa-handshake"></i><h3>Erasmus+</h3><p>Work practice, culture, and new friends.</p></div>
+        <!-- ===== BIG NAVIGATION BAR ===== -->
+        <div class="big-nav">
+            <div class="big-nav-item has-dropdown-big">
+                <a href="#" class="big-nav-link" data-section="practice">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Practice</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-big">
+                    <li><a href="#" data-section="practice" data-filter="all">All Weeks</a></li>
+                    <li><a href="#" data-section="practice" data-filter="week1">Week 1</a></li>
+                    <li><a href="#" data-section="practice" data-filter="week2">Week 2</a></li>
+                    <li><a href="#" data-section="practice" data-filter="week3">Week 3</a></li>
+                    <li><a href="#" data-section="practice" data-filter="week4">Week 4</a></li>
+                </ul>
             </div>
+            <div class="big-nav-item">
+                <a href="#" class="big-nav-link" data-section="culture">
+                    <i class="fas fa-globe"></i>
+                    <span>Culture</span>
+                </a>
+            </div>
+            <div class="big-nav-item">
+                <a href="#" class="big-nav-link" data-section="freetime">
+                    <i class="fas fa-coffee"></i>
+                    <span>Free Time</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="card"><i class="fas fa-school"></i><h3>My School</h3><p>Vocational secondary school "Victoria" – programming &amp; IT.</p></div>
+            <div class="card"><i class="fas fa-building"></i><h3>Host</h3><p>Gut Whelitz, Germany – internship workplace.</p></div>
+            <div class="card"><i class="fas fa-handshake"></i><h3>Erasmus+</h3><p>Work practice, culture, and new friends.</p></div>
         </div>
     </section>
 
@@ -51,6 +93,30 @@
     <section class="section" id="section-practice">
         <h2>Practice &amp; Work Culture</h2>
         <p class="desc">Click a week to see photos</p>
+
+        <div class="sub-nav" id="practiceSubNav">
+            <button class="sub-btn active" data-filter="all">
+                <img src="Pictures/all.jpeg" alt="All Weeks" />
+                <span>All</span>
+            </button>
+            <button class="sub-btn" data-filter="week1">
+                <img src="Pictures/week1_thumb.jpeg" alt="Week 1" />
+                <span>Week 1</span>
+            </button>
+            <button class="sub-btn" data-filter="week2">
+                <img src="Pictures/week2_thumb.jpeg" alt="Week 2" />
+                <span>Week 2</span>
+            </button>
+            <button class="sub-btn" data-filter="week3">
+                <img src="Pictures/week3_thumb.jpeg" alt="Week 3" />
+                <span>Week 3</span>
+            </button>
+            <button class="sub-btn" data-filter="week4">
+                <img src="Pictures/week4_thumb.jpeg" alt="Week 4" />
+                <span>Week 4</span>
+            </button>
+        </div>
+
         <div class="weeks-grid" id="weeksGrid"></div>
     </section>
 
