@@ -14,7 +14,7 @@
 
     <!-- TOP NAVBAR -->
     <nav class="navbar">
-        <div class="brand"><i class="fas fa-terminal"></i> Erasmus+</div>
+        <div class="brand"><i class="fas fa-terminal"></i> Erasmus+ Experiance</div>
         <ul class="nav-links" id="navLinks">
             <li><a href="#" class="active" data-section="home">Home</a></li>
             <li class="has-dropdown">
@@ -22,11 +22,10 @@
                     Practice <i class="fas fa-chevron-down"></i>
                 </a>
                 <ul class="dropdown">
-                    <li><a href="#" data-section="practice" data-filter="all">All Weeks</a></li>
-                    <li><a href="#" data-section="practice" data-filter="week1">Week 1</a></li>
-                    <li><a href="#" data-section="practice" data-filter="week2">Week 2</a></li>
-                    <li><a href="#" data-section="practice" data-filter="week3">Week 3</a></li>
-                    <li><a href="#" data-section="practice" data-filter="week4">Week 4</a></li>
+                    <li><a href="#" data-filter="week1">Week 1</a></li>
+                    <li><a href="#" data-filter="week2">Week 2</a></li>
+                    <li><a href="#" data-filter="week3">Week 3</a></li>
+                    <li><a href="#" data-filter="week4">Week 4</a></li>
                 </ul>
             </li>
             <li><a href="#" data-section="culture">Culture</a></li>
@@ -46,7 +45,7 @@
                 <button class="home-btn next" id="homeCarouselNext"><i class="fas fa-chevron-right"></i></button>
             </div>
 
-            <h1>Miks Henrijs Ozolins</h1>
+            <h1>My stay in Germanany Gut-Whelitz</h1>
             <p class="sub">Programmer · Vocational secondary school "Victoria" (Latvia)</p>
             <p class="sub">→ Erasmus+ internship at <strong>Gut Whelitz, Germany</strong></p>
             <div class="badge"><i class="fas fa-calendar-alt"></i> June – July 2026</div>
@@ -61,11 +60,10 @@
                     <i class="fas fa-chevron-down"></i>
                 </a>
                 <ul class="dropdown-big">
-                    <li><a href="#" data-section="practice" data-filter="all">All Weeks</a></li>
-                    <li><a href="#" data-section="practice" data-filter="week1">Week 1</a></li>
-                    <li><a href="#" data-section="practice" data-filter="week2">Week 2</a></li>
-                    <li><a href="#" data-section="practice" data-filter="week3">Week 3</a></li>
-                    <li><a href="#" data-section="practice" data-filter="week4">Week 4</a></li>
+                    <li><a href="#" data-filter="week1">Week 1</a></li>
+                    <li><a href="#" data-filter="week2">Week 2</a></li>
+                    <li><a href="#" data-filter="week3">Week 3</a></li>
+                    <li><a href="#" data-filter="week4">Week 4</a></li>
                 </ul>
             </div>
             <div class="big-nav-item">
@@ -92,46 +90,63 @@
     <!-- PRACTICE -->
     <section class="section" id="section-practice">
         <h2>Practice &amp; Work Culture</h2>
-        <p class="desc">Click a week to see photos</p>
+        <p class="desc">Select a week to view photos</p>
 
-        <div class="sub-nav" id="practiceSubNav">
-            <button class="sub-btn active" data-filter="all">
-                <img src="Pictures/all.jpeg" alt="All Weeks" />
-                <span>All</span>
-            </button>
-            <button class="sub-btn" data-filter="week1">
-                <img src="Pictures/week1_thumb.jpeg" alt="Week 1" />
-                <span>Week 1</span>
-            </button>
-            <button class="sub-btn" data-filter="week2">
-                <img src="Pictures/week2_thumb.jpeg" alt="Week 2" />
-                <span>Week 2</span>
-            </button>
-            <button class="sub-btn" data-filter="week3">
-                <img src="Pictures/week3_thumb.jpeg" alt="Week 3" />
-                <span>Week 3</span>
-            </button>
-            <button class="sub-btn" data-filter="week4">
-                <img src="Pictures/week4_thumb.jpeg" alt="Week 4" />
-                <span>Week 4</span>
+        <div class="practice-dropdown-container">
+            <select id="practiceWeekSelect" class="practice-select">
+                <option value="">— Select a week —</option>
+                <option value="week1">Week 1: The Beginning</option>
+                <option value="week2">Week 2: Agile</option>
+                <option value="week3">Week 3: Design</option>
+                <option value="week4">Week 4: Build</option>
+            </select>
+            <button id="practiceGoBtn" class="practice-go-btn">
+                <i class="fas fa-arrow-right"></i> View
             </button>
         </div>
 
-        <div class="weeks-grid" id="weeksGrid"></div>
+        <div style="padding: 2rem; text-align: center; background: #f6f8fa; border-radius: 12px; border: 1px solid #e1e4e8; margin-top: 1rem;">
+            <i class="fas fa-images" style="font-size: 2rem; color: #1f6feb;"></i>
+            <p style="margin-top: 0.5rem; color: #57606a;">Select a week from the dropdown above to see photos</p>
+        </div>
     </section>
 
     <!-- CULTURE -->
     <section class="section" id="section-culture">
         <h2>Culture</h2>
-        <p class="desc">Click a card to see more photos</p>
-        <div class="grid" id="cultureGrid"></div>
+        <p class="desc">Slideshow of German culture</p>
+
+        <!-- Culture Carousel -->
+        <div class="page-carousel" id="cultureCarousel">
+            <div class="page-carousel-track" id="cultureCarouselTrack"></div>
+            <div class="page-carousel-dots" id="cultureCarouselDots"></div>
+            <button class="page-carousel-btn prev" id="cultureCarouselPrev"><i class="fas fa-chevron-left"></i></button>
+            <button class="page-carousel-btn next" id="cultureCarouselNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <!-- CAPTION BELOW CAROUSEL -->
+        <div class="page-carousel-caption" id="cultureCarouselCaption">
+            <h4 id="cultureCaptionTitle">German Cuisine</h4>
+            <p id="cultureCaptionDesc">We tried traditional German food – grilled bratwurst with mustard and fresh pretzels.</p>
+        </div>
     </section>
 
     <!-- FREETIME -->
     <section class="section" id="section-freetime">
         <h2>Free Time</h2>
-        <p class="desc">Click a card to see more photos</p>
-        <div class="grid" id="freetimeGrid"></div>
+        <p class="desc">Slideshow of leisure activities</p>
+
+        <!-- Freetime Carousel -->
+        <div class="page-carousel" id="freetimeCarousel">
+            <div class="page-carousel-track" id="freetimeCarouselTrack"></div>
+            <div class="page-carousel-dots" id="freetimeCarouselDots"></div>
+            <button class="page-carousel-btn prev" id="freetimeCarouselPrev"><i class="fas fa-chevron-left"></i></button>
+            <button class="page-carousel-btn next" id="freetimeCarouselNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <!-- CAPTION BELOW CAROUSEL -->
+        <div class="page-carousel-caption" id="freetimeCarouselCaption">
+            <h4 id="freetimeCaptionTitle">Forest Hike</h4>
+            <p id="freetimeCaptionDesc">We went hiking through the German forest and enjoyed the fresh air.</p>
+        </div>
     </section>
 
     <!-- CAROUSEL MODAL -->

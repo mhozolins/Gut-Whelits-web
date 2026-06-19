@@ -2,7 +2,7 @@
 const homeSlides = [
     { img: 'Pictures/mhozolins.jpeg', title: 'Miks Henrijs Ozolins', desc: 'Programmer from Latvia · Erasmus+ participant' },
     { img: 'Pictures/group.jpeg', title: 'Our Group', desc: 'International team of students and mentors' },
-    { img: 'Pictures/school.jpeg', title: 'Vocational Secondary School "Victoria"', desc: 'My school in Latvia – programming & IT' },
+    { img: 'Pictures/victoria.jpeg', title: 'Vocational Secondary School "Victoria"', desc: 'My school in Latvia – programming & IT' },
     { img: 'Pictures/germany.jpeg', title: 'Gut Whelitz, Germany', desc: 'Host organization and internship destination' }
 ];
 
@@ -53,22 +53,22 @@ homeInterval = setInterval(nextHomeSlide, 4000);
 
 // ===== PRACTICE DATA =====
 const weekData = [
-    { week: 1, title: 'Kick-off', slides: [
-        { img: 'Pictures/week1_1.jpeg', title: 'Welcome', desc: 'First day at Gut Whelitz.' },
-        { img: 'Pictures/week1_2.jpeg', title: 'Stand-up', desc: 'Daily meeting.' },
-        { img: 'Pictures/week1_3.jpeg', title: 'Workshop', desc: 'Design session.' }
+    { week: 1, title: 'Week 1: The Beginning', slides: [
+        { img: 'Pictures/First_day.jpeg', title: 'Start', desc: 'First day at Gut Whelitz, we got up and went to our first practice lesson, we met our mantor and started our first task.' },
+        { img: 'Pictures/week1_codeaca.jpeg', title: 'First Task', desc: 'Our first task was to revise our Web development knowlage and to pratice JavaScript in a website called "CodeCademy".' },
+        { img: 'Pictures/Website_start.jpeg', title: 'The Website', desc: 'We were given an task to make a website about our stay in Germany so in the last day of the First week we started to create the website that you are now reading.' }
     ]},
-    { week: 2, title: 'Agile', slides: [
+    { week: 2, title: 'Week 2: Agile', slides: [
         { img: 'Pictures/week2_1.jpeg', title: 'Scrum', desc: 'Task board.' },
         { img: 'Pictures/week2_2.jpeg', title: 'Pairing', desc: 'Coding together.' },
         { img: 'Pictures/week2_3.jpeg', title: 'Client', desc: 'Presentation.' }
     ]},
-    { week: 3, title: 'Design', slides: [
+    { week: 3, title: 'Week 3: Design', slides: [
         { img: 'Pictures/week3_1.jpeg', title: 'Moodboard', desc: 'Inspiration.' },
         { img: 'Pictures/week3_2.jpeg', title: 'Wireframe', desc: 'Sketching.' },
         { img: 'Pictures/week3_3.jpeg', title: 'Feedback', desc: 'Critiques.' }
     ]},
-    { week: 4, title: 'Build', slides: [
+    { week: 4, title: 'Week 4: Build', slides: [
         { img: 'Pictures/week4_1.jpeg', title: 'Sprint', desc: 'Building MVP.' },
         { img: 'Pictures/week4_2.jpeg', title: 'Testing', desc: 'Bug fixing.' },
         { img: 'Pictures/week4_3.jpeg', title: 'Demo', desc: 'Showcase.' }
@@ -76,162 +76,77 @@ const weekData = [
 ];
 
 // ===== CULTURE SLIDES =====
-const cultureSlidesData = [
-    { title: 'German Cuisine', slides: [
-        { img: 'Pictures/cfood1.jpeg', title: 'Bratwurst', desc: 'Grilled sausages.' },
-        { img: 'Pictures/cfood2.jpeg', title: 'Pretzels', desc: 'Soft pretzels.' },
-        { img: 'Pictures/cfood3.jpeg', title: 'Schnitzel', desc: 'Breaded veal.' }
-    ]},
-    { title: 'Language', slides: [
-        { img: 'Pictures/clang1.jpeg', title: 'German Class', desc: 'Learning phrases.' },
-        { img: 'Pictures/clang2.jpeg', title: 'Conversation', desc: 'Practicing with locals.' },
-        { img: 'Pictures/clang3.jpeg', title: 'Signs', desc: 'Reading street signs.' }
-    ]},
-    { title: 'Festivals', slides: [
-        { img: 'Pictures/cfest1.jpeg', title: 'Parade', desc: 'Local celebration.' },
-        { img: 'Pictures/cfest2.jpeg', title: 'Music', desc: 'Live bands.' },
-        { img: 'Pictures/cfest3.jpeg', title: 'Food Stalls', desc: 'Local specialties.' }
-    ]},
-    { title: 'History', slides: [
-        { img: 'Pictures/chist1.jpeg', title: 'Old Town', desc: 'Historic centre.' },
-        { img: 'Pictures/chist2.jpeg', title: 'Castle', desc: 'Medieval fortress.' },
-        { img: 'Pictures/chist3.jpeg', title: 'Cathedral', desc: 'Gothic architecture.' }
-    ]}
+const cultureSlides = [
+    { img: 'Pictures/cfood1.jpeg', title: 'German Cuisine', desc: 'We tried traditional German food – grilled bratwurst with mustard and fresh pretzels.' },
+    { img: 'Pictures/cfood2.jpeg', title: 'Pretzel Making', desc: 'We visited a local bakery and learned how to make soft German pretzels.' },
+    { img: 'Pictures/cfood3.jpeg', title: 'Schnitzel Dinner', desc: 'We enjoyed a traditional schnitzel dinner with local German families.' },
+    { img: 'Pictures/clang1.jpeg', title: 'German Language Class', desc: 'We took language lessons to learn basic German phrases for everyday use.' },
+    { img: 'Pictures/clang2.jpeg', title: 'Conversation Practice', desc: 'We practiced speaking German with locals at the market and in shops.' },
+    { img: 'Pictures/cfest1.jpeg', title: 'Local Festival', desc: 'We joined a street parade and experienced local music and dancing.' },
+    { img: 'Pictures/cfest2.jpeg', title: 'Live Music', desc: 'We watched live bands performing traditional German folk music.' },
+    { img: 'Pictures/chist1.jpeg', title: 'Old Town Tour', desc: 'We explored the historic city centre with a local guide.' },
+    { img: 'Pictures/chist2.jpeg', title: 'Medieval Castle', desc: 'We visited a medieval castle and learned about its history and architecture.' }
 ];
 
 // ===== FREETIME SLIDES =====
-const freetimeSlidesData = [
-    { title: 'Nature Walks', slides: [
-        { img: 'Pictures/fnature1.jpeg', title: 'Forest Trail', desc: 'Walking in the woods.' },
-        { img: 'Pictures/fnature2.jpeg', title: 'Lake View', desc: 'Peaceful lakeside.' },
-        { img: 'Pictures/fnature3.jpeg', title: 'Sunset', desc: 'Golden hour.' }
-    ]},
-    { title: 'City Tours', slides: [
-        { img: 'Pictures/ftour1.jpeg', title: 'Market Square', desc: 'Town centre.' },
-        { img: 'Pictures/ftour2.jpeg', title: 'Museum', desc: 'Local history.' },
-        { img: 'Pictures/ftour3.jpeg', title: 'River Cruise', desc: 'Boat tour.' }
-    ]},
-    { title: 'Sports', slides: [
-        { img: 'Pictures/fsport1.jpeg', title: 'Football', desc: 'Playing with friends.' },
-        { img: 'Pictures/fsport2.jpeg', title: 'Cycling', desc: 'Bike ride.' },
-        { img: 'Pictures/fsport3.jpeg', title: 'Swimming', desc: 'Cooling off.' }
-    ]},
-    { title: 'Cafés', slides: [
-        { img: 'Pictures/fcafe1.jpeg', title: 'Coffee', desc: 'Enjoying cappuccino.' },
-        { img: 'Pictures/fcafe2.jpeg', title: 'Cake', desc: 'Slicing cake.' },
-        { img: 'Pictures/fcafe3.jpeg', title: 'Terrace', desc: 'Sitting outside.' }
-    ]}
+const freetimeSlides = [
+    { img: 'Pictures/freetime1.jpeg', title: 'Plane Spotting', desc: 'I am quite keen on plane spotting and luckly we were next to an airport so that was a no issue.' },
+    { img: 'Pictures/fnature2.jpeg', title: 'Lake Day', desc: 'We spent the afternoon by the lake, swimming and relaxing with friends.' },
+    { img: 'Pictures/fnature3.jpeg', title: 'Sunset View', desc: 'We watched the sunset over the fields – an amazing view after a long day.' },
+    { img: 'Pictures/ftour1.jpeg', title: 'Market Square', desc: 'We visited the town market square and bought local products.' },
+    { img: 'Pictures/ftour2.jpeg', title: 'Museum Visit', desc: 'We explored a local museum and learned about the region\'s history.' },
+    { img: 'Pictures/fsport1.jpeg', title: 'Football Match', desc: 'We played football with local students – great fun and teamwork.' },
+    { img: 'Pictures/fsport2.jpeg', title: 'Cycling Tour', desc: 'We rented bikes and cycled through the beautiful German countryside.' },
+    { img: 'Pictures/fcafe1.jpeg', title: 'Coffee Break', desc: 'We relaxed in a local café and enjoyed cappuccino and cake.' },
+    { img: 'Pictures/fcafe2.jpeg', title: 'Afternoon Treat', desc: 'We tried traditional German cake and pastries in a cozy café.' }
 ];
 
-// ===== RENDER WEEKS =====
-const weeksGrid = document.getElementById('weeksGrid');
-let weekCards = [];
+// ===== OPEN WEEK BY FILTER =====
+function openWeekByFilter(filter) {
+    const week = weekData.find(w => `week${w.week}` === filter);
+    if (week) {
+        openCarousel(week.slides, week.title);
+    }
+}
 
-weekData.forEach((w, idx) => {
-    const card = document.createElement('div');
-    card.className = 'week-card';
-    card.dataset.week = `week${w.week}`;
-    card.innerHTML = `
-        <div class="num">Week ${w.week}</div>
-        <h4>${w.title}</h4>
-        <p>${w.slides.length} photos</p>
-        <div class="hint"><i class="fas fa-arrow-right"></i> click</div>
-    `;
-    card.addEventListener('click', () => openCarousel(w.slides, `Week ${w.week}: ${w.title}`));
-    weeksGrid.appendChild(card);
-    weekCards.push(card);
+// ===== DROPDOWN FILTER (top nav + big nav) =====
+function handleFilterClick(filter, e) {
+    e.preventDefault();
+    openWeekByFilter(filter);
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('active');
+    document.querySelectorAll('.has-dropdown-big').forEach(el => el.classList.remove('open'));
+    document.querySelectorAll('.has-dropdown').forEach(el => el.classList.remove('open'));
+}
+
+document.querySelectorAll('.dropdown a[data-filter]').forEach(link => {
+    link.addEventListener('click', (e) => handleFilterClick(link.dataset.filter, e));
 });
 
-// ===== SUB BUTTON FILTER =====
-const subBtns = document.querySelectorAll('.sub-btn');
-subBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        subBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        const filter = btn.dataset.filter;
-        weekCards.forEach(card => {
-            if (filter === 'all') {
-                card.style.display = 'block';
-            } else {
-                card.style.display = card.dataset.week === filter ? 'block' : 'none';
-            }
-        });
-    });
+document.querySelectorAll('.dropdown-big a[data-filter]').forEach(link => {
+    link.addEventListener('click', (e) => handleFilterClick(link.dataset.filter, e));
 });
 
-// ===== DROPDOWN FILTER (top nav) =====
-const dropdownLinks = document.querySelectorAll('.dropdown a[data-filter]');
-dropdownLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const filter = link.dataset.filter;
-        switchSection('practice');
-        subBtns.forEach(btn => {
-            btn.classList.toggle('active', btn.dataset.filter === filter);
-        });
-        weekCards.forEach(card => {
-            if (filter === 'all') {
-                card.style.display = 'block';
-            } else {
-                card.style.display = card.dataset.week === filter ? 'block' : 'none';
-            }
-        });
-        document.getElementById('navLinks').classList.remove('open');
-        document.getElementById('hamburger').classList.remove('active');
-    });
+// ===== PRACTICE PAGE DROPDOWN =====
+const practiceSelect = document.getElementById('practiceWeekSelect');
+const practiceGoBtn = document.getElementById('practiceGoBtn');
+
+practiceGoBtn.addEventListener('click', () => {
+    const filter = practiceSelect.value;
+    if (filter) {
+        openWeekByFilter(filter);
+        practiceSelect.value = '';
+    }
 });
 
-// ===== BIG NAV DROPDOWN FILTER (homepage) =====
-const bigDropdownLinks = document.querySelectorAll('.dropdown-big a[data-filter]');
-bigDropdownLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const filter = link.dataset.filter;
-        switchSection('practice');
-        subBtns.forEach(btn => {
-            btn.classList.toggle('active', btn.dataset.filter === filter);
-        });
-        weekCards.forEach(card => {
-            if (filter === 'all') {
-                card.style.display = 'block';
-            } else {
-                card.style.display = card.dataset.week === filter ? 'block' : 'none';
-            }
-        });
-        // Close big dropdown on mobile
-        document.querySelectorAll('.has-dropdown-big').forEach(el => el.classList.remove('open'));
-    });
-});
-
-// ===== BIG NAV LINKS (homepage) =====
-const bigNavLinks = document.querySelectorAll('.big-nav-link[data-section]');
-bigNavLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const section = link.dataset.section;
-        if (section) switchSection(section);
-    });
-});
-
-// ===== RENDER CULTURE =====
-const cultureGrid = document.getElementById('cultureGrid');
-cultureSlidesData.forEach(item => {
-    const el = document.createElement('div');
-    el.className = 'grid-item';
-    el.innerHTML = `<img src="${item.slides[0].img}" alt="${item.title}" /><h4>${item.title}</h4><p>${item.slides.length} photos</p>`;
-    el.addEventListener('click', () => openCarousel(item.slides, item.title));
-    cultureGrid.appendChild(el);
-});
-
-// ===== RENDER FREETIME =====
-const freetimeGrid = document.getElementById('freetimeGrid');
-freetimeSlidesData.forEach(item => {
-    const el = document.createElement('div');
-    el.className = 'grid-item';
-    el.innerHTML = `<img src="${item.slides[0].img}" alt="${item.title}" /><h4>${item.title}</h4><p>${item.slides.length} photos</p>`;
-    el.addEventListener('click', () => openCarousel(item.slides, item.title));
-    freetimeGrid.appendChild(el);
+practiceSelect.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        const filter = practiceSelect.value;
+        if (filter) {
+            openWeekByFilter(filter);
+            practiceSelect.value = '';
+        }
+    }
 });
 
 // ===== SHARED CAROUSEL MODAL =====
@@ -302,6 +217,74 @@ document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeCarousel();
 });
 
+// ===== PAGE CAROUSELS (Culture & Freetime) =====
+function createPageCarousel(slidesData, containerId, trackId, dotsId, prevId, nextId, captionTitleId, captionDescId) {
+    const track = document.getElementById(trackId);
+    const dots = document.getElementById(dotsId);
+    const prevBtn = document.getElementById(prevId);
+    const nextBtn = document.getElementById(nextId);
+    const captionTitle = document.getElementById(captionTitleId);
+    const captionDesc = document.getElementById(captionDescId);
+    let currentIndex = 0;
+
+    function renderSlides() {
+        track.innerHTML = '';
+        dots.innerHTML = '';
+        slidesData.forEach((s, i) => {
+            const div = document.createElement('div');
+            div.className = 'page-carousel-slide';
+            div.innerHTML = `<img src="${s.img}" alt="${s.title}" loading="lazy" />`;
+            track.appendChild(div);
+            const dot = document.createElement('span');
+            dot.addEventListener('click', () => goTo(i));
+            dots.appendChild(dot);
+        });
+    }
+
+    function goTo(i) {
+        if (i < 0) i = slidesData.length - 1;
+        if (i >= slidesData.length) i = 0;
+        currentIndex = i;
+        track.style.transform = `translateX(-${i * 100}%)`;
+        document.querySelectorAll(`#${dotsId} span`).forEach((d, idx) => d.classList.toggle('active', idx === i));
+        const s = slidesData[i];
+        captionTitle.textContent = s.title;
+        captionDesc.textContent = s.desc;
+    }
+
+    function next() { goTo(currentIndex + 1); }
+    function prev() { goTo(currentIndex - 1); }
+
+    renderSlides();
+    goTo(0);
+
+    prevBtn.addEventListener('click', prev);
+    nextBtn.addEventListener('click', next);
+}
+
+// Init Culture and Freetime page carousels
+createPageCarousel(
+    cultureSlides,
+    'cultureCarousel',
+    'cultureCarouselTrack',
+    'cultureCarouselDots',
+    'cultureCarouselPrev',
+    'cultureCarouselNext',
+    'cultureCaptionTitle',
+    'cultureCaptionDesc'
+);
+
+createPageCarousel(
+    freetimeSlides,
+    'freetimeCarousel',
+    'freetimeCarouselTrack',
+    'freetimeCarouselDots',
+    'freetimeCarouselPrev',
+    'freetimeCarouselNext',
+    'freetimeCaptionTitle',
+    'freetimeCaptionDesc'
+);
+
 // ===== NAVIGATION =====
 const navLinks = document.querySelectorAll('.nav-links > li > a[data-section]');
 const sections = {
@@ -317,9 +300,6 @@ function switchSection(id) {
     Object.values(sections).forEach(s => s.classList.remove('active'));
     if (sections[id]) sections[id].classList.add('active');
     navLinks.forEach(l => l.classList.toggle('active', l.dataset.section === id));
-    document.querySelectorAll('.dropdown a').forEach(l => {
-        l.classList.toggle('active', l.dataset.section === id);
-    });
     document.querySelectorAll('.big-nav-link').forEach(l => {
         l.classList.toggle('active', l.dataset.section === id);
     });
@@ -333,7 +313,14 @@ navLinks.forEach(l => l.addEventListener('click', (e) => {
     if (section) switchSection(section);
 }));
 
-// Mobile dropdown toggle (top nav)
+document.querySelectorAll('.big-nav-link[data-section]').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const section = link.dataset.section;
+        if (section) switchSection(section);
+    });
+});
+
 const practiceParent = document.querySelector('.has-dropdown');
 if (practiceParent) {
     practiceParent.addEventListener('click', (e) => {
@@ -344,7 +331,6 @@ if (practiceParent) {
     });
 }
 
-// Mobile dropdown toggle (big nav)
 document.querySelectorAll('.has-dropdown-big').forEach(el => {
     el.addEventListener('click', (e) => {
         if (window.innerWidth <= 768) {
