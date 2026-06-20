@@ -1,7 +1,7 @@
 // ===== HOME CAROUSEL =====
 const homeSlides = [
     { img: 'Pictures/mhozolins.jpeg', title: 'Miks Henrijs Ozolins', desc: 'Programmer from Latvia · Erasmus+ participant' },
-    { img: 'Pictures/group.jpeg', title: 'Our Group', desc: 'International team of students and mentors' },
+    { img: 'Pictures/group.jpeg', title: 'Our Group', desc: 'Our group of dedicated and hard working people and eager to learn something new everyday' },
     { img: 'Pictures/victoria.jpeg', title: 'Vocational Secondary School "Victoria"', desc: 'My school in Latvia – programming & IT' },
     { img: 'Pictures/germany.jpeg', title: 'Gut Whelitz, Germany', desc: 'Host organization and internship destination' }
 ];
@@ -77,10 +77,10 @@ const weekData = [
 
 // ===== CULTURE SLIDES =====
 const cultureSlides = [
-    { img: 'Pictures/cfood1.jpeg', title: 'German Cuisine', desc: 'We tried traditional German food – grilled bratwurst with mustard and fresh pretzels.' },
-    { img: 'Pictures/cfood2.jpeg', title: 'Pretzel Making', desc: 'We visited a local bakery and learned how to make soft German pretzels.' },
-    { img: 'Pictures/cfood3.jpeg', title: 'Schnitzel Dinner', desc: 'We enjoyed a traditional schnitzel dinner with local German families.' },
-    { img: 'Pictures/clang1.jpeg', title: 'German Language Class', desc: 'We took language lessons to learn basic German phrases for everyday use.' },
+    { img: 'Pictures/culture1.jpeg', title: 'City Of Berlin', desc: 'We had the oprotunitty to wisit the Big city of Berlin and admire its architecture and the rich History that it had' },
+    { img: 'Pictures/culture4.jpeg', title: 'Pretzel Making', desc: 'We visited a local bakery and learned how to make soft German pretzels.' },
+    { img: 'Pictures/culture5.jpeg', title: 'Schnitzel Dinner', desc: 'We enjoyed a traditional schnitzel dinner with local German families.' },
+    { img: 'Pictures/culture2.jpeg', title: 'German Language Class', desc: 'We took language lessons to learn basic German phrases for everyday use.' },
     { img: 'Pictures/clang2.jpeg', title: 'Conversation Practice', desc: 'We practiced speaking German with locals at the market and in shops.' },
     { img: 'Pictures/cfest1.jpeg', title: 'Local Festival', desc: 'We joined a street parade and experienced local music and dancing.' },
     { img: 'Pictures/cfest2.jpeg', title: 'Live Music', desc: 'We watched live bands performing traditional German folk music.' },
