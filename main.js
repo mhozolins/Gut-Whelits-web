@@ -78,9 +78,9 @@ const weekData = [
 // ===== CULTURE SLIDES =====
 const cultureSlides = [
     { img: 'Pictures/culture1.jpeg', title: 'City Of Berlin', desc: 'We had the oprotunitty to wisit the Big city of Berlin and admire its architecture and the rich History that it had' },
-    { img: 'Pictures/culture4.jpeg', title: 'Pretzel Making', desc: 'We visited a local bakery and learned how to make soft German pretzels.' },
-    { img: 'Pictures/culture5.jpeg', title: 'Schnitzel Dinner', desc: 'We enjoyed a traditional schnitzel dinner with local German families.' },
-    { img: 'Pictures/culture2.jpeg', title: 'German Language Class', desc: 'We took language lessons to learn basic German phrases for everyday use.' },
+    { img: 'Pictures/culture4.jpeg', title: 'Bradenburg Gate', desc: 'We saw the most famous gate in Germany and maybe in the whole world..' },
+    { img: 'Pictures/culture5.jpeg', title: 'Memorial Of Holocaust', desc: 'This monument is the remberence of the Holocaust it each cube represents each of us, they are diffeent siyes to show that we are the same but we look diferent from eachother, that we are uniqe.' },
+    { img: 'Pictures/culture2.jpeg', title: 'Memorial for the Gypsies', desc: 'We visited the memorial for the Gypsies that were killend during the WWII and I saw that Germans are verry sad of this tradegy and that they feel sorry for the loses.' },
     { img: 'Pictures/clang2.jpeg', title: 'Conversation Practice', desc: 'We practiced speaking German with locals at the market and in shops.' },
     { img: 'Pictures/cfest1.jpeg', title: 'Local Festival', desc: 'We joined a street parade and experienced local music and dancing.' },
     { img: 'Pictures/cfest2.jpeg', title: 'Live Music', desc: 'We watched live bands performing traditional German folk music.' },
@@ -91,7 +91,7 @@ const cultureSlides = [
 // ===== FREETIME SLIDES =====
 const freetimeSlides = [
     { img: 'Pictures/freetime1.jpeg', title: 'Plane Spotting', desc: 'I am quite keen on plane spotting and luckly we were next to an airport so that was a no issue.' },
-    { img: 'Pictures/fnature2.jpeg', title: 'Lake Day', desc: 'We spent the afternoon by the lake, swimming and relaxing with friends.' },
+    { img: 'Pictures/freetime2.jpeg', title: 'Chilling in the Room', desc: 'We spend the most time in our room resting, talking, listening to music and thinking of what to do next.' },
     { img: 'Pictures/fnature3.jpeg', title: 'Sunset View', desc: 'We watched the sunset over the fields – an amazing view after a long day.' },
     { img: 'Pictures/ftour1.jpeg', title: 'Market Square', desc: 'We visited the town market square and bought local products.' },
     { img: 'Pictures/ftour2.jpeg', title: 'Museum Visit', desc: 'We explored a local museum and learned about the region\'s history.' },
